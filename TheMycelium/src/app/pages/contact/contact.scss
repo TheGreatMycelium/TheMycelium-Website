@@ -1,0 +1,31 @@
+.intro { color: var(--color-muted); margin-bottom: 2rem; }
+
+form { max-width: 600px; }
+
+.field { margin-bottom: 1.25rem; }
+
+label { display: block; margin-bottom: .4rem; font-weight: 600; }
+
+input, textarea {
+  width: 100%;
+  padding: .75rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid #2c303a;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+
+  &:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+  &[aria-invalid='true'] { border-color: #ff6b6b; }
+}
+
+textarea { resize: vertical; }
+
+.error { color: #ff6b6b; display: block; margin-top: .3rem; }
+
+.btn { cursor: pointer; font: inherit; font-weight: 600; &:disabled { opacity: .6; cursor: wait; } }
+
+.feedback { margin-top: 1rem; &.success { color: #4cd694; } &.failure { color: #ff6b6b; } }
+
+// Honeypot : hors écran plutôt que display:none (que certains robots détectent)
+.hp { position: absolute; left: -9999px; }

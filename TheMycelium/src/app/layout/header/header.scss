@@ -1,0 +1,8 @@
+.header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 2rem; background: var(--color-surface);
+}
+nav { display: flex; gap: 1.5rem; }
+nav a { color: var(--color-muted); }
+nav a.active, nav a:hover { color: var(--color-text); }
+.logo { font-weight: 700; font-size: 1.2rem; color: var(--color-text); }
