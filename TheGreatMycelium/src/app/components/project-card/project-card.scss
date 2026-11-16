@@ -1,0 +1,17 @@
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  height: 100%;
+}
+h3 { margin: 0 0 .5rem; }
+p { color: var(--color-muted); }
+.tags {
+  display: flex; flex-wrap: wrap; gap: .5rem;
+  list-style: none; padding: 0; margin: 1rem 0;
+}
+.tags li {
+  font-size: .8rem; padding: .2rem .6rem;
+  border-radius: 999px; border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+}
