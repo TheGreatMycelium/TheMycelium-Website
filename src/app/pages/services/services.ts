@@ -8,10 +8,12 @@ import { Seo } from '../../services/seo';
   selector: 'app-services',
   imports: [RouterLink, ServiceCard],
   template: `
-    <h1>Services</h1>
-    <p classe="intro">
-        Que ce soit pour un site sur mesure ou une solution pus simple, voici comment je peux vous accompagner.
-    </p>
+    <div class="intro">
+      <h1>Services</h1>
+      <p>
+        Un site entier, ou seulement quelques retouches?
+      </p>
+    </div>
 
     <div class="grid">
       @for (service of services; track service.title) {

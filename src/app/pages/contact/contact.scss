@@ -1,4 +1,7 @@
-.intro { color: var(--color-muted); margin-bottom: 2rem; }
+.intro { 
+  color: var(--color-colored);
+  margin-bottom: 2rem;
+}
 
 form { max-width: 600px; }
 
@@ -11,7 +14,7 @@ input, textarea {
   padding: .75rem 1rem;
   border-radius: var(--radius);
   border: 1px solid #2c303a;
-  background: var(--color-surface);
+  background: var(--color-card);
   color: var(--color-text);
   font: inherit;
 

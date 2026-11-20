@@ -1,8 +1,81 @@
 .header {
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 1rem 2rem; background: var(--color-surface);
+  position: relative;               // sert de repère au menu déroulant
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  min-height: 64px;
+  background: var(--color-surface);
 }
-nav { display: flex; gap: 1.5rem; }
-nav a { color: var(--color-muted); }
-nav a.active, nav a:hover { color: var(--color-text); }
+
 .logo { font-weight: 700; font-size: 1.2rem; color: var(--color-text); }
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+
+  a { color: var(--color-muted); }
+  a.active, a:hover { color: var(--color-text); }
+}
+
+// Le bouton n'existe visuellement que sur mobile
+.menu-toggle { display: none; }
+
+@media (max-width: 768px) {
+  .header { padding: 1rem; }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;                    // zone tactile confortable
+    height: 44px;
+    padding: 10px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: var(--color-text);
+      border-radius: 2px;
+      transition: transform .25s, opacity .25s;
+    }
+
+    // Les 3 barres deviennent une croix
+    &.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    &.open span:nth-child(2) { opacity: 0; }
+    &.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+  }
+  
+  .logo,
+  .menu-toggle {
+    z-index: 20;
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+    inset: 0;                       // top, right, bottom, left : 0
+    
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 5rem 1rem 2rem;        // le haut laisse la place au logo et au bouton
+    background: var(--color-bg);
+    overflow-y: auto;               // si les liens dépassent sur un écran très bas
+
+    &.open { display: flex; }
+
+    a { font-size: 1.5rem; padding: 0; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-toggle span { transition: none; }
+}

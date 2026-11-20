@@ -1,6 +1,6 @@
 import { DOCUMENT, inject, Injectable } from "@angular/core";
 import { Meta } from "@angular/platform-browser";
-import { SITE } from "../data/data";
+import { SITE } from "../data/site";
 
 export interface SeoConfig {
     title: string;

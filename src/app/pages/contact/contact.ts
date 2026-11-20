@@ -10,7 +10,6 @@ type Status = 'idle' | 'sending' | 'success' | 'error';
   selector: 'app-contact',
   imports: [ReactiveFormsModule],
   template: `
-    <h1>Contact</h1>
     <p class="intro">Un projet, une question? Écris-moi, je réponds rapidement.</p>
 
     <form [formGroup]="form" (ngSubmit)="submit()" novalidate>

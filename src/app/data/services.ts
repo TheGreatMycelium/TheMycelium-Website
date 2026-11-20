@@ -1,38 +1,9 @@
+import servicesJson from './services.json';
+
 export interface Service {
     title: string;
     description: string;
     features: string[];
 }
 
-export const SERVICES: Service[] = [
-    {
-        title: 'Sites vitrines sur mesure',
-        description: 'Sites en Angular, rapides, bien référencés et faciles à faire évoluer.',
-        features: [
-            'Design adapté à votre identité',
-            'Site responsive (mobile, tablette, ordinateur)',
-            'Optimisation SEO et performances',
-            'Code modulaire pour évoluer facilement',
-        ]
-    },
-    {
-        title: 'Sites Wix et Wordpress',
-        description: 'Création et personnalisation de sites Wix pour les particuliers et petits budgets.',
-        features: [
-            'Mise en place rapide',
-            'Modification autonome par vos soins',
-            'Configuration du nom de domaine',
-            'Prise en main et formation',
-        ],
-    },
-    {
-        title: 'Webmastering',
-        description: 'Maintenance, mise à jour, référencement et suivi de votre site.',
-        features: [
-            'Mise à jour de contenu',
-            'Suivi des performances et du référencement',
-            'Corrections et évolutions',
-            'Sauvegardes et sécurité',
-        ],
-    },
-];
+export const SERVICES: Service[] = servicesJson;

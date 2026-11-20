@@ -1,0 +1,22 @@
+[
+    {
+        "path": "/", 
+        "label": "Accueil"
+    },
+    {
+        "path": "/services",
+        "label": "Service"
+    },
+    {
+        "path": "/realisations",
+        "label": "Réalisations"
+    },
+    {
+        "path": "/a-propos",
+        "label": "À propos"
+    },
+    {
+        "path": "/contact",
+        "label": "Contact"
+    }
+]

@@ -1,12 +1,25 @@
 :root {
-  --color-bg: #0f1115;
-  --color-surface: #181b22;
-  --color-text: #e8eaf0;
-  --color-muted: #9aa1b2;
-  --color-accent: #4f8cff;
+  --color-bg: #DCBEA1;
+  --color-surface: #8C5A27;
+  --color-card: #A27A50;
+
+  --color-text: #2D1512;
+  --color-muted: #A58F79;
+  --color-colored: #6F2E0D;
+
+  --color-accent: #1C0F0F;
+
   --font-main: system-ui, -apple-system, 'Segoe UI', sans-serif;
   --radius: 12px;
-  --max-width: 1100px;
+  --max-width: 1200px;
+}
+
+[data-theme='dark'] {
+  --color-bg: #f3d6af;
+  --color-surface: #170f00;
+  --color-text: #2e1e00;
+  --color-muted: #9aa1b2;
+  --color-accent: #133011;
 }
 
 app-root {
@@ -32,7 +45,7 @@ body {
 
 main { max-width: var(--max-width); margin: 0 auto; padding: 2rem 1rem; }
 
-a { color: var(--color-accent); text-decoration: none; }
+a { color: var(--color-text); text-decoration: none; }
 
 .grid {
   display: grid;
@@ -45,7 +58,7 @@ a { color: var(--color-accent); text-decoration: none; }
   padding: .75rem 1.5rem;
   border-radius: var(--radius);
   background: var(--color-accent);
-  color: #fff;
+  color: var(--color-bg);
   font-weight: 600;
   border: 2px solid var(--color-accent);
   transition: opacity .2s;

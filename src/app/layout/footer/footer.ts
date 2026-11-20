@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { SITE } from '../../data/data';
+import { SITE } from '../../data/site';
 import { NAV_LINKS } from '../../data/navigation';
 
 @Component({

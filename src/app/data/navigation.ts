@@ -1,12 +1,5 @@
-export interface NavLink {
-    path: string;
-    label: string;
-}
+import navJson from './navigation.json';
 
-export const NAV_LINKS: NavLink[] = [
-    { path: '/', label: 'Accueil' },
-    { path: '/services', label: 'Service' },
-    { path: '/realisations', label: 'Réalisations' },
-    { path: '/a-propos', label: 'À propos' },
-    { path:'/contact', label: 'Contact' },
-];
+export interface NavLink { path: string; label: string; }
+
+export const NAV_LINKS: NavLink[] = navJson;
