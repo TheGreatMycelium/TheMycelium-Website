@@ -10,7 +10,7 @@ import { SITE } from '../../data/site';
   template: `
     <header class="header">
       <a routerLink="/" class="logo" (click)="close()">
-        <img src="/the_mycelium_logo_round.png" width="32" height="32" alt="" />
+        <img src="/the_mycelium_logo_round_web.svg" width="32" height="32" alt="" />
         <span>{{ siteName }}</span>
       </a>
       
