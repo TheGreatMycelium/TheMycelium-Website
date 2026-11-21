@@ -1,11 +1,12 @@
-:root {
-  --color-bg: #DCBEA1;
-  --color-surface: #8C5A27;
-  --color-card: #A27A50;
 
-  --color-text: #2D1512;
+:root {
+  --color-bg: #EFD2B6;
+  --color-surface: #7C4C26;
+  --color-card: #B2783B;
+
+  --color-text: #3E1D18;
   --color-muted: #A58F79;
-  --color-colored: #6F2E0D;
+  --color-colored: #583038;
 
   --color-accent: #1C0F0F;
 
@@ -14,12 +15,17 @@
   --max-width: 1200px;
 }
 
+
 [data-theme='dark'] {
-  --color-bg: #f3d6af;
-  --color-surface: #170f00;
-  --color-text: #2e1e00;
-  --color-muted: #9aa1b2;
-  --color-accent: #133011;
+  --color-bg: #18100F;
+  --color-surface: #2B66CF;
+  --color-card: #2B8ADC;
+
+  --color-text: #18C3FA;
+  --color-muted: #7B69CB;
+  --color-colored: #7B69CB;
+
+  --color-accent: #DA4F45;
 }
 
 app-root {

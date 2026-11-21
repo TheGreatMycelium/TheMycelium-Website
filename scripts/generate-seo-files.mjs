@@ -5,7 +5,7 @@ const readJson = (relativePath) =>
 
 const site = readJson('../src/app/data/site.json');
 const navigation = readJson('../src/app/data/navigation.json');
-const projects = readJson('./src/app/data/projects.json');
+const projects = readJson('../src/app/data/projects.json');
 
 if (!site.url || !site.url.startsWith('https://')) {
     throw new Error('site.json : "url" doit être renseignée et commencer par https://');
@@ -44,7 +44,7 @@ Sitemap: ${baseUrl}/sitemap.xml
 
 const publicFile = (name) => new URL(`../public/${name}`, import.meta.url);
 
-writeFileSync(publicFile('sitemap.xml', sitemap));
+writeFileSync(publicFile('sitemap.xml'), sitemap);
 writeFileSync(publicFile('robots.txt'), robots);
 
 console.log(`SEO : ${paths.length} URL écrites dans public/sitemap.xml et public/robots.txt`);

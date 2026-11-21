@@ -10,7 +10,10 @@ import { NAV_LINKS } from '../../data/navigation';
     <footer class="footer">
       <div class="inner">
         <div class="brand">
-          <strong>{{ site.name }}</strong>
+          <div class="brand_logo">
+            <img src="/the_mycelium_logo_round_web.svg" width="18" height="18" alt="" />
+            <strong>{{ site.name }}</strong>
+          </div>
           <p>{{ site.tagline }}</p>
         </div>
 

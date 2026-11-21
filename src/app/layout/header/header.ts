@@ -9,7 +9,10 @@ import { SITE } from '../../data/site';
   host: { '(keydown.escape)': 'close()' },
   template: `
     <header class="header">
-      <a routerLink="/" class="logo" (click)="close()">{{ siteName }}</a>
+      <a routerLink="/" class="logo" (click)="close()">
+        <img src="/the_mycelium_logo_round.png" width="32" height="32" alt="" />
+        <span>{{ siteName }}</span>
+      </a>
       
       <button 
         class="menu-toggle"

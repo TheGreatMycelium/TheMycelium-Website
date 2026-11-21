@@ -13,5 +13,5 @@ import { Footer } from './layout/footer/footer';
   `,
 })
 export class App {
-  protected readonly title = signal('TheGreatMycelium');
+  protected readonly title = signal('TheMycelium');
 }

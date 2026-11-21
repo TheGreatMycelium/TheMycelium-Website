@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.themycelium.fr/</loc></url>
-  <url><loc>https://www.themycelium.fr/services</loc></url>
-  <url><loc>https://www.themycelium.fr/realisations</loc></url>
-  <url><loc>https://www.themycelium.fr/realisations/projet-exemple</loc></url>
-  <url><loc>https://www.themycelium.fr/a-propos</loc></url>
-  <url><loc>https://www.themycelium.fr/contact</loc></url>
+<?xml version ="1.0" encoding="UTF-8"?>
+<urlset xmls="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url><loc>https://www.themycelium.fr/</loc></url>
+ <url><loc>https://www.themycelium.fr/services</loc></url>
+ <url><loc>https://www.themycelium.fr/realisations</loc></url>
+ <url><loc>https://www.themycelium.fr/a-propos</loc></url>
+ <url><loc>https://www.themycelium.fr/contact</loc></url>
+ <url><loc>https://www.themycelium.fr'/realisations/LDVL</loc></url>
+ <url><loc>https://www.themycelium.fr'/realisations/ecole-SZQD</loc></url>
+ <url><loc>https://www.themycelium.fr'/realisations/pratiquant</loc></url>
 </urlset>
