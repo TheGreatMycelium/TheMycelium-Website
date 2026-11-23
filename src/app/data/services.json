@@ -1,7 +1,9 @@
 [
     {
-        "title": "Sites vitrines sur mesure",
-        "description": "Sites en Angular, rapides, bien référencés et faciles à faire évoluer.",
+        "pair": false,
+        "title": "Site vitrine",
+        "besoin": "Un site vitrine, pour promouvoir ton activité ?",
+        "imageUrl": "/illu_site_vitrine.jpg",
         "features": [
             "Design adapté à votre identité",
             "Site responsive (mobile, tablette, ordinateur)",
@@ -10,8 +12,10 @@
         ]
     },
     {
-        "title": "Sites Wix et Wordpress",
-        "description": "Création et personnalisation de sites Wix pour les particuliers et petits budgets.",
+        "pair": true,
+        "title": "Site CMS",
+        "besoin": "Un soutien pour la création ou la mise à jour de ton site ?",
+        "imageUrl": "/illu_maj_soutien.jpg",
         "features": [
             "Mise en place rapide",
             "Modification autonome par vos soins",
@@ -20,13 +24,27 @@
         ]
     },
     {
+        "pair": false,
         "title": "Webmastering",
-        "description": "Maintenance, mise à jour, référencement et suivi de votre site.",
+        "besoin": "Du Webmastering, de l'optimisation SEO et recherche IA ?",
+        "imageUrl": "/illu_seo.jpg",
         "features": [
             "Mise à jour de contenu",
             "Suivi des performances et du référencement",
             "Corrections et évolutions",
             "Sauvegardes et sécurité"
+        ]
+    },
+    {
+        "pair": true,
+        "title": "Conception totale",
+        "besoin": "Un projet entier, pour lancer ton activité ?",
+        "imageUrl": "/illu_full_projet.jpg",
+        "features": [
+            "Création de 0",
+            "Choix du meilleur média",
+            "Conception, développement, déploiement et suivis",
+            "Mise à jour, évolution constante"
         ]
     }
 ]

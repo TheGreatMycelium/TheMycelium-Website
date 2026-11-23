@@ -5,29 +5,35 @@ import { SERVICES } from "../../data/services";
 import { PROJECTS } from "../../data/projects";
 import { Seo } from "../../services/seo";
 
-const SCROLL_RANGE = 400;
+const SCROLL_RANGE = 600;
 
 @Component({
   selector: 'app-home',
   imports: [RouterLink, ProjectCard],
   template: `
     <section class="hero" #hero>
+      <img src="/the_mycelium_logo_round_web.svg" alt="" />
       <h1>Développeur Web et Webmaster</h1>
-      <p>Rejoignez le Mycélium. Travaillez l'esprit tranquille.</p>
+      <p>Rejoins le Mycélium. Travailles l'esprit tranquille.</p>
+        <!--
       <div class="actions">
-        <a routerLink="/contact" class="btn">Me contacter</a>
-        <a routerLink="/realisations" class="btn btn-outline">Voir mes réalisations</a>
+        <a routerLink="/realisations" class="btn btn-outline">Un projet? Parlons en ⇾</a>
       </div>
-      <span class="scroll-hint" aria-hidden="true">↓↓↓</span>
+      -->
     </section>
 
     <section>
-      <h2>Services</h2>
-      <div class="grid">
+      <div class="services">
         @for (service of services; track service.title) {
-          <article class="service">
-            <h3>{{ service.title }}</h3>
-            <p>{{ service.description }}</p>
+          <article class="grid">
+            @if (!service.pair) {
+              <h3>{{ service.besoin }}</h3>
+              <img src="{{ service.imageUrl }}" alt="Illustration Site Vitrine">
+            }
+            @else {
+              <img src="{{ service.imageUrl }}" alt="Illustration Site Vitrine">
+              <h3>{{ service.besoin }}</h3>      
+            }
           </article>
         }
       </div>

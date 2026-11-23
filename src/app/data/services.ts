@@ -1,8 +1,10 @@
 import servicesJson from './services.json';
 
 export interface Service {
+    pair: boolean;
     title: string;
-    description: string;
+    besoin: string;
+    imageUrl: string;
     features: string[];
 }
 

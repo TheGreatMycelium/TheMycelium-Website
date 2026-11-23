@@ -6,7 +6,7 @@ import { Service } from '../../data/services';
   template: `
     <article class="card">
       <h3>{{ service().title }}</h3>
-      <p>{{ service().description }}</p>
+      <p>{{ service().besoin }}</p>
       @if (!compact()) {
         <ul>
           @for (feature of service().features; track feature) {

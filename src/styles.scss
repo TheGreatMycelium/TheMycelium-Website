@@ -5,14 +5,14 @@
   --color-card: #B2783B;
 
   --color-text: #3E1D18;
-  --color-muted: #A58F79;
+  --color-muted: #BEA08A;
   --color-colored: #583038;
 
   --color-accent: #1C0F0F;
 
   --font-main: system-ui, -apple-system, 'Segoe UI', sans-serif;
   --radius: 12px;
-  --max-width: 1200px;
+  --max-width: 80%;
   --header-height: 64px;
 }
 
@@ -74,7 +74,9 @@ a { color: var(--color-text); text-decoration: none; }
   border: 2px solid var(--color-accent);
   transition: opacity .2s;
 
-  &:hover { opacity: .85; }
+  &:hover {
+    opacity: .85;
+  }
 
   &.btn-outline {
     background: transparent;

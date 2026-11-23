@@ -3,7 +3,7 @@
   --hero-full: calc(100svh - var(--header-height) - 2rem);
   --hero-min: 40svh;
 
-  --boost-extra: 0.2;
+  --boost-extra: 0.3;
   --boost: calc(1 + (1 - var(--progress)) * var(--boost-extra));
 
   min-height: calc(var(--hero-full) - var(--progress) * (var(--hero-full) - var(--hero-min)));
@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 2rem;
   padding: 2rem 0;
 
   h1 { 
@@ -23,7 +24,7 @@
   p {
     color: var(--color-colored);
     font-size: calc(1.15rem * var(--boost));
-    max-width: calc(600px * var(--boost));
+    max-width: calc(600px * var(--boos  t));
     margin: 0 0 calc(2rem * var(--boost));
   }
 }
@@ -47,21 +48,38 @@
 }
 
 .grid {
-  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+  align-items: center;
+
+  h3 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    margin: 0 0 .5rem;
+  }
+
+  img {
+    max-width: clamp(2rem, 45vw, 38rem);
+    border-radius: 15rem;
+    border: 1px solid var(--color-colored);
+  }
 }
 
-.service {
-  background: var(--color-card);
-  border-radius: var(--radius);
-  padding: 1.5rem;
-  border: 1px solid var(--color-colored);
-
-  h3 { margin: 0 0 .5rem; }
-  p { color: var(--color-colored); margin: 0; }
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
 }
 
 .more { display: inline-block; margin-top: 1.5rem; }
 
 @media (max-width: 768px) {
-  .hero { --boost-extra: 0.2; }
+  .hero { --boost-extra: 0.2;}
+  .grid { 
+    flex-wrap: wrap;
+    gap: 2rem;
+    h3 { text-align: center;}
+  }
 }
