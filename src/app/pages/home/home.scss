@@ -60,11 +60,18 @@ h3 {
   gap: 10rem;
 }
 
-.grid {
-  display: flex;
+.flex {
   justify-content: space-around;
   gap: 10rem;
-  align-items: center;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    &::before {
+      content: "⤍";
+    }
+  }
 
   img {
     max-width: clamp(2rem, 35vw, 30rem);
@@ -86,12 +93,11 @@ h3 {
 
   li {
     display: flex;
-    flex-direction: row;
     align-items: center;
 
     &::before {
       content: "✧";
-      margin: 1rem 1rem 1rem 0;
+      margin: 0 1rem 0 0;
     }
   }
 }
@@ -99,14 +105,24 @@ h3 {
 .more { display: inline-block; margin-top: 1.5rem; }
 
 @media (max-width: 768px) {
+  h3 { 
+    text-align: center;
+    margin: 0 0 1.5rem;
+  }
+
   .hero { 
     --boost-extra: 0.2;
     img { width: 100%;}
   }
-  .grid { 
+
+  .why {
+    ul {
+      padding: 0;
+    }
+  }
+
+  .flex { 
     flex-wrap: wrap;
     gap: 2rem;
-    
-    h3 { text-align: center;}
   }
 }

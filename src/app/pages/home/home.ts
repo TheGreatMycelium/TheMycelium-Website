@@ -25,7 +25,7 @@ const SCROLL_RANGE = 600;
     <section>
       <div class="services">
         @for (service of services; track service.title) {
-          <article class="grid">
+          <article class="flex">
             @if (!service.pair) {
               <div class="service">
                 <h3>{{ service.besoin }}</h3>
